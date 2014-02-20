@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>is-near-bottom</title>
+  <style>
+    body {
+      padding: 50px;
+    }
+
+    body.bottom {
+      background: green;
+    }
+  </style>
+</head>
+<body>
+  <script src="build/build.js"></script>
+  <script>
+    var isNearBottom = require('is-near-bottom');
+
+    var n = 200;
+    while (n--) {
+      document.write('<p>dummy data ' + n + '</p>')
+    }
+
+    onscroll = function(){
+      if (isNearBottom()) {
+        document.body.classList.add('bottom')
+      } else {
+        document.body.classList.remove('bottom')
+      }
+    }
+  </script>
+</body>
+</html>

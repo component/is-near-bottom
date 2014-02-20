@@ -1,0 +1,14 @@
+{
+  "name": "is-near-bottom",
+  "repo": "component/is-near-bottom",
+  "description": "Check if the user is scrolled near the bottom of the document",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
